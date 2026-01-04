@@ -30,7 +30,7 @@ document.querySelector('#app').innerHTML = `
             </div>
         </div>
         <div class="hero-image">
-            <img src="/portrait.png" alt="Dibbo Chakraborty" class="hero-portrait " />
+            <img src="images/portrait.png" alt="Dibbo Chakraborty" class="hero-portrait " />
         </div>
       </div>
     </section>
@@ -42,7 +42,7 @@ document.querySelector('#app').innerHTML = `
           <article class="project-card">
             <div class="project-image">
                <a href="https://etuition-1e987.web.app/" target="_blank">
-                 <img src="https://i.ibb.co.com/C5ndGsRx/Screenshot-2026-01-05-at-01-20-54-e-Tuition.png" alt="EtuitionBD" />
+                 <img src="images/et.png" alt="EtuitionBD" />
                </a>
             </div>
             <div class="project-info">
@@ -57,7 +57,7 @@ document.querySelector('#app').innerHTML = `
           <article class="project-card">
             <div class="project-image">
                <a href="https://b12a10-utility-management.web.app/home" target="_blank">
-                 <img src="https://i.ibb.co.com/rG1FVpWQ/Screenshot-2026-01-05-at-01-22-18-Utility-Manager.png" alt="Utilify" />
+                 <img src="images/ut.png" alt="Utilify" />
                </a>
             </div>
             <div class="project-info">
@@ -72,7 +72,7 @@ document.querySelector('#app').innerHTML = `
            <article class="project-card">
             <div class="project-image">
                <a href="https://b12a09-green-nest.web.app" target="_blank">
-                 <img src="https://i.ibb.co.com/C3sS6V8P/Screenshot-2026-01-05-at-01-22-24-Green-Nest.png" alt="Green Nest" />
+                 <img src="images/gn.png" alt="Green Nest" />
                </a>
             </div>
             <div class="project-info">
