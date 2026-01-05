@@ -92,10 +92,16 @@ a:hover {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
-.nav a:hover {
-  color: var(--text-primary);
+.nav a:hover,
+.nav a.active {
+  color: var(--bg-color);
+  background-color: var(--text-primary);
+  opacity: 1;
 }
 
 /* Common Section */
@@ -233,7 +239,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   padding: 0.8rem 1.8rem;
-  border-radius: 4px;
+  border-radius: 50px;
   font-weight: 500;
   font-size: 0.95rem;
   cursor: pointer;
@@ -516,12 +522,21 @@ a:hover {
 
 .hero-socials a {
     color: var(--text-secondary);
-    font-size: 1.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.2rem;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--border-subtle);
+    transition: all 0.3s ease;
 }
 
 .hero-socials a:hover {
-    color: var(--text-primary);
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    border-color: var(--text-primary);
     transform: translateY(-3px);
 }
 
@@ -595,7 +610,12 @@ a:hover {
     }
     
     .nav {
-        display: none; /* simple hide for mobile for now, valid for MVPs */
+        display: flex;
+        gap: 1.2rem;
+    }
+    
+    .nav a {
+        font-size: 0.85rem;
     }
     
     .hero h1 {

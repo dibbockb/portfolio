@@ -25,7 +25,7 @@ document.querySelector('#app').innerHTML = `
             <div class="hero-btns">
                 <a href="#work" class="btn primary">View Work</a>
                 <a href="#contact" class="btn secondary">Get in Touch</a>
-                <a href="https://github.com/dibbockb" target="_blank" class="btn outline">Download Resume <i class="ph ph-download-simple"></i></a>
+                <a href="https://github.com/dibbockb" target="_blank" class="btn secondary">Download Resume </a>  
             </div>
             <div class="hero-socials">
                 <a href="https://github.com/dibbockb" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
@@ -183,3 +183,28 @@ document.querySelector('#app').innerHTML = `
     </section>
   </main>
 `
+
+// Scroll Highlight Logic
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a');
+
+const observerOptions = {
+  root: null,
+  threshold: 0.5, // 50% of the section must be visible
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute('id');
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+}, observerOptions);
+
+sections.forEach((section) => observer.observe(section));
