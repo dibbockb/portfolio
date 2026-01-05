@@ -205,6 +205,16 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .hero-socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
 .subtitle {
   font-size: 1.2rem;
   color: var(--text-secondary);
@@ -263,6 +273,10 @@ a:hover {
 }
 
 /* Work / Projects */
+#work {
+    padding-bottom: 0;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -349,8 +363,18 @@ a:hover {
 /* About */
 .about-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: start;
+}
+
+.about-text {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.about-text .section-title {
+    text-align: center;
 }
 
 .about-text p {
@@ -359,24 +383,56 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+.education {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
+}
+
+.education h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.education p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.4;
+}
+
+.education span {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
 .skills h3 {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     font-weight: 500;
+    text-align: center;
 }
 
 /* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    gap: 1.5rem;
-    padding-top: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 0.5rem;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
 }
 
 .skill-item {
     position: relative;
-    /* font-size removed */
-    /* color removed */
     transition: transform 0.3s ease;
     cursor: pointer;
     display: flex;
@@ -431,7 +487,7 @@ a:hover {
 /* Contact */
 .contact-container {
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .contact-text {
@@ -470,8 +526,8 @@ a:hover {
 }
 
 .footer {
-    margin-top: 5rem;
-    padding: 3rem 0;
+    margin-top: 2rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -549,6 +605,11 @@ a:hover {
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .section-title,
+    .skills h3 {
+        text-align: center;
     }
     
     .email-link {

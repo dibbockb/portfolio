@@ -1,4 +1,8 @@
 import './style.css'
+import portraitImg from './images/portrait.png'
+import etImg from './images/et.png'
+import utImg from './images/ut.png'
+import gnImg from './images/gn.png'
 
 document.querySelector('#app').innerHTML = `
   <header class="header">
@@ -16,8 +20,8 @@ document.querySelector('#app').innerHTML = `
     <section id="hero" class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-            <h1>Building digital <br> <span class="accent">experiences</span> that matter.</h1>
-            <p class="subtitle">Dibbo Chakraborty | Minimalist Front-End Developer & UI Designer. crafting polished, high-performance web interfaces.</p>
+            <h1>Dibbo Chakraborty</h1>
+            <p class="subtitle">Junior Full-Stack Developer (React, Tailwind, Node.js, MongoDB) <br> I build clean, functional web apps with real backends.</p>
             <div class="hero-btns">
                 <a href="#work" class="btn primary">View Work</a>
                 <a href="#contact" class="btn secondary">Get in Touch</a>
@@ -30,7 +34,7 @@ document.querySelector('#app').innerHTML = `
             </div>
         </div>
         <div class="hero-image">
-            <img src="images/portrait.png" alt="Dibbo Chakraborty" class="hero-portrait " />
+            <img src="${portraitImg}" alt="Dibbo Chakraborty" class="hero-portrait " />
         </div>
       </div>
     </section>
@@ -42,7 +46,7 @@ document.querySelector('#app').innerHTML = `
           <article class="project-card">
             <div class="project-image">
                <a href="https://etuition-1e987.web.app/" target="_blank">
-                 <img src="images/et.png" alt="EtuitionBD" />
+                 <img src="${etImg}" alt="EtuitionBD" />
                </a>
             </div>
             <div class="project-info">
@@ -57,7 +61,7 @@ document.querySelector('#app').innerHTML = `
           <article class="project-card">
             <div class="project-image">
                <a href="https://b12a10-utility-management.web.app/home" target="_blank">
-                 <img src="images/ut.png" alt="Utilify" />
+                 <img src="${utImg}" alt="Utilify" />
                </a>
             </div>
             <div class="project-info">
@@ -72,7 +76,7 @@ document.querySelector('#app').innerHTML = `
            <article class="project-card">
             <div class="project-image">
                <a href="https://b12a09-green-nest.web.app" target="_blank">
-                 <img src="images/gn.png" alt="Green Nest" />
+                 <img src="${gnImg}" alt="Green Nest" />
                </a>
             </div>
             <div class="project-info">
@@ -93,8 +97,13 @@ document.querySelector('#app').innerHTML = `
         <div class="about-content">
             <div class="about-text">
                 <h3 class="section-title">About Me</h3>
-                <p>I focus on the intersection of design and engineering. With a strong foundation in modern web technologies and a keen eye for detail, I build products that are not only functional but also delightful to use.</p>
-                <p>My approach is simple: clean code, minimalist design, and user-centric thinking.</p>
+                <p>I’m a junior full-stack web developer focused on building practical React and Node.js applications.</p>
+                <p>I work with authentication, REST APIs, and MongoDB, and I enjoy turning messy requirements into clean, working systems.</p>
+                
+                <div class="education">
+                    <h4>Education</h4>
+                    <p>B.A. in English Literature (Ongoing) <br> <span>University of Chittagong</span></p>
+                </div>
             </div>
             <div class="skills">
                 <h3>Tech Stack</h3>
