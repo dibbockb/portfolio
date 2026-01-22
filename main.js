@@ -25,7 +25,7 @@ document.querySelector('#app').innerHTML = `
             <div class="hero-btns">
                 <a href="#work" class="btn primary">View Work</a>
                 <a href="#contact" class="btn secondary">Get in Touch</a>
-                <a href="https://github.com/dibbockb" target="_blank" class="btn secondary">Download Resume </a>  
+                <a href="https://drive.google.com/file/d/16CpFOOEgUlHbOU65PsnP6-UVOP-MwnoG/view" target="_blank" class="btn secondary">Resume </a>  
             </div>
             <div class="hero-socials">
                 <a href="https://github.com/dibbockb" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
@@ -45,45 +45,54 @@ document.querySelector('#app').innerHTML = `
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-image">
-               <a href="https://etuition-1e987.web.app/" target="_blank">
-                 <img src="${etImg}" alt="EtuitionBD" />
-               </a>
+               <img src="${etImg}" alt="EtuitionBD" />
             </div>
             <div class="project-info">
               <h3>EtuitionBD</h3>
-              <p>A global platform connecting students with verified tutors. Built with React, Firebase, and a robust backend API.</p>
+              <p>A global role-based platform connecting students with verified tutors.</p>
+              <ul class="project-features">
+                  <li><i class="ph ph-check-circle"></i> Student/Tutor/Admin dashboards & Firebase Auth</li>
+                  <li><i class="ph ph-check-circle"></i> Tuition posting, apps, Stripe payments & revenue</li>
+                  <li><i class="ph ph-check-circle"></i> TanStack Query fetching + Chart.js admin stats</li>
+              </ul>
               <div class="project-actions">
-                  <a href="https://etuition-1e987.web.app/" target="_blank" class="project-link">Live Preview <i class="ph ph-arrow-right"></i></a>
+                  <a href="https://etuition-1e987.web.app/" target="_blank" class="project-link stretched-link">Live Preview <i class="ph ph-arrow-right"></i></a>
                   <a href="https://github.com/dibbockb/etuitionbd" target="_blank" class="project-link">GitHub Repo </a>
               </div>
             </div>
           </article>
           <article class="project-card">
             <div class="project-image">
-               <a href="https://b12a10-utility-management.web.app/home" target="_blank">
-                 <img src="${utImg}" alt="Utilify" />
-               </a>
+               <img src="${utImg}" alt="Utilify" />
             </div>
             <div class="project-info">
               <h3>Utilify</h3>
-              <p>A comprehensive bill management system for tracking and paying monthly dues. Efficient and user-friendly.</p>
+              <p>Comprehensive bill management system for tracking and paying monthly dues.</p>
+              <ul class="project-features">
+                  <li><i class="ph ph-check-circle"></i> Restricted payments & dual ৳/USD display</li>
+                  <li><i class="ph ph-check-circle"></i> Firebase Auth (Email/Google) + private routes</li>
+                  <li><i class="ph ph-check-circle"></i> Interactive carousel & animated category grid</li>
+              </ul>
               <div class="project-actions">
-                  <a href="https://b12a10-utility-management.web.app/home" target="_blank" class="project-link">Live Preview <i class="ph ph-arrow-right"></i></a>
+                  <a href="https://b12a10-utility-management.web.app/home" target="_blank" class="project-link stretched-link">Live Preview <i class="ph ph-arrow-right"></i></a>
                   <a href="https://github.com/dibbockb/utilify" target="_blank" class="project-link">GitHub Repo </a>
               </div>
             </div>
           </article>
            <article class="project-card">
             <div class="project-image">
-               <a href="https://b12a09-green-nest.web.app" target="_blank">
-                 <img src="${gnImg}" alt="Green Nest" />
-               </a>
+               <img src="${gnImg}" alt="Green Nest" />
             </div>
             <div class="project-info">
               <h3>Green Nest</h3>
-              <p>A modern plant store e-commerce platform built with React and Tailwind CSS. Features a clean, soothing UI.</p>
+              <p>A modern plant store e-commerce platform with a clean, soothing UI.</p>
+              <ul class="project-features">
+                  <li><i class="ph ph-check-circle"></i> Dynamic rating-sorted carousel & JSON fetch</li>
+                  <li><i class="ph ph-check-circle"></i> Firebase Auth & protected e-commerce routes</li>
+                  <li><i class="ph ph-check-circle"></i> Mobile-first Tailwind design & hero animations</li>
+              </ul>
               <div class="project-actions">
-                  <a href="https://b12a09-green-nest.web.app" target="_blank" class="project-link">Live Preview <i class="ph ph-arrow-right"></i></a>
+                  <a href="https://b12a09-green-nest.web.app" target="_blank" class="project-link stretched-link">Live Preview <i class="ph ph-arrow-right"></i></a>
                   <a href="https://github.com/dibbockb/green-nest-client" target="_blank" class="project-link">GitHub Repo </a>
               </div>
             </div>
@@ -108,10 +117,10 @@ document.querySelector('#app').innerHTML = `
             <div class="skills">
                 <h3>Tech Stack</h3>
                 <div class="skills-grid">
-                    <div class="skill-item" data-tooltip="HTML5">
+                    <div class="skill-item" data-tooltip="HTML">
                         <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="HTML5" />
                     </div>
-                    <div class="skill-item" data-tooltip="CSS3">
+                    <div class="skill-item" data-tooltip="CSS">
                         <img src="https://skillicons.dev/icons?i=css&theme=dark" alt="CSS3" />
                     </div>
                     <div class="skill-item" data-tooltip="Tailwind CSS">
@@ -123,17 +132,17 @@ document.querySelector('#app').innerHTML = `
                     <div class="skill-item" data-tooltip="React">
                         <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="React" />
                     </div>
-                    <div class="skill-item" data-tooltip="Node.js">
-                        <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="Node.js" />
-                    </div>
-                    <div class="skill-item" data-tooltip="Figma">
-                        <img src="https://skillicons.dev/icons?i=figma&theme=dark" alt="Figma" />
+                    <div class="skill-item" data-tooltip="npm">
+                        <img src="https://skillicons.dev/icons?i=npm&theme=dark" alt="npm" />
                     </div>
                     <div class="skill-item" data-tooltip="Express">
                         <img src="https://skillicons.dev/icons?i=express&theme=dark" alt="Express" />
                     </div>
                     <div class="skill-item" data-tooltip="MongoDB">
                         <img src="https://skillicons.dev/icons?i=mongodb&theme=dark" alt="MongoDB" />
+                    </div>
+                    <div class="skill-item" data-tooltip="Figma">
+                        <img src="https://skillicons.dev/icons?i=figma&theme=dark" alt="Figma" />
                     </div>
                     <div class="skill-item" data-tooltip="Firebase">
                         <img src="https://skillicons.dev/icons?i=firebase&theme=dark" alt="Firebase" />
@@ -162,9 +171,9 @@ document.querySelector('#app').innerHTML = `
                 <blockquote>"Intelligence is not the ability to store information, but to know where to find it."</blockquote>
                 <cite>― Albert Einstein</cite>
             </a>
-            <a href="https://www.goodreads.com/quotes/41383" target="_blank" class="quote-card">
-                <blockquote>"Two possibilities exist: either we are alone in the Universe or we are not. Both are equally terrifying."</blockquote>
-                <cite>- Arthur C. Clarke</cite>
+            <a href="https://www.goodreads.com/quotes/19905" target="_blank" class="quote-card">
+                <blockquote>“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”</blockquote>
+                <cite>― Antoine de Saint-Exupéry</cite>
             </a>
         </div>
       </div>

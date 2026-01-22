@@ -290,11 +290,15 @@ a:hover {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     background: var(--bg-card);
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid var(--border-subtle);
     transition: transform 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -330,6 +334,9 @@ a:hover {
 
 .project-info {
     padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-info h3 {
@@ -341,13 +348,35 @@ a:hover {
 .project-info p {
     color: var(--text-secondary);
     font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.project-features li {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.project-features li i {
+    color: var(--text-primary);
+    font-size: 1rem;
+    opacity: 0.8;
 }
 
 .project-actions {
     display: flex;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .project-link {
@@ -364,6 +393,27 @@ a:hover {
 .project-link:hover {
     color: #fff;
     text-decoration: underline;
+}
+
+.stretched-link {
+    position: static;
+}
+
+/* Stretched link to make the whole card clickable */
+.stretched-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Ensure secondary links are clickable above the stretched link */
+.project-actions a:not(.stretched-link) {
+    position: relative;
+    z-index: 2;
 }
 
 /* About */
@@ -431,7 +481,7 @@ a:hover {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem 0.5rem;
+    gap: 3rem 0.5rem;
     max-width: 280px;
     margin: 0 auto;
     padding: 0.5rem 0;
@@ -472,7 +522,7 @@ a:hover {
     transform: translateX(-50%) translateY(10px);
     background: var(--bg-card);
     color: var(--text-primary);
-    padding: 4px 8px;
+    padding: 2px 10px 4px 10px;
     font-size: 0.75rem;
     border-radius: 4px;
     white-space: nowrap;
