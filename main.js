@@ -183,7 +183,7 @@ document.querySelector('#app').innerHTML = `
       <div class="container contact-container">
         <h2 class="work-together">Let's Work Together</h2>
         <p class="contact-text">Currently available for freelance projects and open to new opportunities.</p>
-        <a href="mailto:divyajitchakraborty@gmail.com" class="email-link">divyajitchakraborty@gmail.com</a>
+        <a href="mailto:dibbo@dibbockb.com" class="email-link">dibbo@dibbockb.com</a>
         
         <footer class="footer">
             <p class="copyright">&copy; 2026 Dibbo Chakraborty. </p>
